@@ -14,9 +14,9 @@ body{
     width: 90vw;
     max-width: 32em;
     position: absolute;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     left: 50%;
-    top: 1em;
+    top: 50%;
     border-radius: 0.8em;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -39,8 +39,92 @@ body{
 .search-box button {
     font-size: 1em;
     background-color: aqua;
+    border: none;
+    font-weight: 600;
+    border-radius: 0.3em;
 }
 .search-box button:hover{
     background-color: black;
     color: whitesmoke;
+}
+.container img{
+    display: block;
+    width: 50%;
+    margin: 1.8em auto 0 auto;
+}
+#recipe pre{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 2.5em 1.2em 1.2em 1.2em;
+}
+#recipe {
+    position: absolute;
+    background-color: wheat;
+    min-height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 0.8em;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+display: none;
+}
+#hide-recipe {
+    font-size: 1em;
+    position: relative;
+    width: 1.8em;
+    height: 1.8em;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 0.4em;
+    top: 1.2em;
+    left: 90%;
+}
+.details{
+    background-color: aqua;
+    margin: -1.5em 0 0 0;
+    position: relative;
+    text-align: center;
+    padding: 0.6em 0;
+}
+.details h2{
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.details h4{
+    font-size: 1em;
+    font-weight: 350;
+}
+#show-recipe{
+    font-size: 1em;
+    position: relative;
+    background-color: wheat;
+    left: 75%;
+    padding: 0.9em 0.6em;
+    border: none;
+    top: 1.5em;
+    border-radius: 0.3em;
+    font-weight: 600;
+}
+ul{
+    font-size: 1em;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.8em 1.1em;
+    padding: 1.2em 0 0 1.2em;
+}
+h3{
+    text-align: center;
+    margin-top: 1.2em;
+    color: red;
+    font-weight: 500;
+}
+@media screen and (max-width: 500px){
+    .container{
+        font-size: 10px;
+    }
 }
